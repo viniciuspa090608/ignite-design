@@ -22,7 +22,11 @@ jobs:
 
       - run: npm ci
 
-      - run: NODE_OPTIONS=--openssl-legacy-provider npm run build
+      - name: Build
+        run: NODE_OPTIONS=--openssl-legacy-provider npm run build
+        env:
+          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+          TURBO_TEAM: vinicius-projects-aedb46f8
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
