@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "dev": "start-storybook -p 6006",
-  "build": "build-storybook",
-  "deploy-storybook": "storybook-to-ghpages"
-},
+    "dev": "start-storybook -p 6006",
+    "build": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",

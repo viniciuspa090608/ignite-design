@@ -1,3 +1,0 @@
----
-"@ignite-ui/tokens": major
----
